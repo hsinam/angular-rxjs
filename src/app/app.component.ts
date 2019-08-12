@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { interval, Observable, from } from 'rxjs';
+import { getInvoice, getCustomer, getAddress } from 'src/backend/api';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app03';
+
+  stream1$ = interval(1000);
 }

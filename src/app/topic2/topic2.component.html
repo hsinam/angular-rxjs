@@ -1,0 +1,5 @@
+<p *ngIf="neatObservable$ | async as result; else waiting">
+  topic2 works!
+  {{ result | json }}
+</p>
+<ng-template #waiting>Waiting for server response</ng-template>
